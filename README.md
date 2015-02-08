@@ -1,2 +1,2 @@
-# SPManager
+# SuperMarkertTools
 A supermarkert management tools
