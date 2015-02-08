@@ -22,6 +22,7 @@
     <None Include="res\SuperMarketTools.ico">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SuperMarketTools.h">
@@ -45,6 +46,9 @@
     <ClInclude Include="DlgAddCustom.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SMTDataBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SuperMarketTools.cpp">
@@ -60,6 +64,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="DlgAddCustom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SMTDataBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
