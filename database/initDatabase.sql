@@ -1,0 +1,22 @@
+CREATE DATABASE IF NOT EXISTS `SuperMarketTools`;
+USE `SuperMarketTools`;
+CREATE TABLE IF NOT EXISTS `Customers`
+(
+	id INTEGER NOT NULL AUTO_INCREMENT,
+	name VARCHAR(64) NOT NULL,
+	sex VARCHAR(32),
+	phone VARCHAR(32),
+	address VARCHAR(256),
+	note VARCHAR(1024),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS `Records`
+(
+	id INTEGER NOT NULL AUTO_INCREMENT,
+	user_id INTEGER NOT NULL,
+	record_time TIME NOT NULL,
+	amount DOUBLE NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (user_id) REFERENCES Customers(id)
+);
