@@ -99,6 +99,8 @@
     <None Include="res\SuperMarketTools.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DlgAddCustom.h" />
+    <ClInclude Include="DlgRecipt.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="SuperMarketTools.h" />
@@ -106,6 +108,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DlgAddCustom.cpp" />
+    <ClCompile Include="DlgRecipt.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -119,4 +123,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SuperMarketTools.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

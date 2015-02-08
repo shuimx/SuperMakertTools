@@ -2,6 +2,9 @@
 // SuperMarketToolsDlg.h : Í·ÎÄ¼þ
 //
 
+#include "DlgRecipt.h"
+#include "DlgAddCustom.h"
+
 #pragma once
 
 
@@ -29,4 +32,7 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedBtnAddCustom();
+	afx_msg void OnBnClickedBtnRecipt();
 };
