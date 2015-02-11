@@ -6,6 +6,7 @@
 #include "SuperMarketTools.h"
 #include "SuperMarketToolsDlg.h"
 #include "afxdialogex.h"
+#include "SMTDataBase.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -158,6 +159,8 @@ HCURSOR CSuperMarketToolsDlg::OnQueryDragIcon()
 void CSuperMarketToolsDlg::OnBnClickedBtnAddCustom()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	// test database conn
+	CSMTDataBase database;
 	CDlgAddCustom dlg;
 	dlg.DoModal();
 }
