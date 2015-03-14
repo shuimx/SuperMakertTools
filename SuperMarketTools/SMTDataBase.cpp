@@ -24,7 +24,7 @@ CSMTDataBase::CSMTDataBase()
     mysql_options(&mydata,MYSQL_SET_CHARSET_NAME,"gbk");
            
    if (mysql_real_connect(&mydata,"localhost","root","root","supermarkettools", 3306, 0, 0)) {
-	   AfxMessageBox(_T("connect successfully"), MB_OK);
+//	   AfxMessageBox(_T("connect successfully"), MB_OK);
    }
 /*
 	// add customer
