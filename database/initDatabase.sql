@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Records`
 (
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	user_id INTEGER NOT NULL,
-	record_time TIME NOT NULL,
+	record_time DATETIME  NOT NULL,
 	amount DOUBLE NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (user_id) REFERENCES Customers(id)

@@ -160,7 +160,7 @@ void CSuperMarketToolsDlg::OnBnClickedBtnAddCustom()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	// test database conn
-	CSMTDataBase database;
+//	CSMTDataBase database;
 	CDlgAddCustom dlg;
 	dlg.DoModal();
 }
